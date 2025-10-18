@@ -1,9 +1,9 @@
 #!/bin/bash
 #by tonho dalua
 # echo "$crot    ALL=(ALL:ALL) ALL" >> /etc/sudoers;
-wget -q -O /tmp/sshd_config https://all.tonho888.cloud/node/config/sshd_config && sudo mv /tmp/sshd_config /etc/ssh/sshd_config
+wget -q -O /tmp/sshd_config https://raw.githubusercontent.com/dalua5566/smplayer/refs/heads/master/icons/config/sshd_config && sudo mv /tmp/sshd_config /etc/ssh/sshd_config
 systemctl restart ssh
-wget -q -O /tmp/resolv.conf https://all.tonho888.cloud/node/config/resolv.conf && sudo mv /tmp/resolv.conf /etc/resolv.conf
+wget -q -O /tmp/resolv.conf https://raw.githubusercontent.com/dalua5566/smplayer/refs/heads/master/icons/config/resolv.conf && sudo mv /tmp/resolv.conf /etc/resolv.conf
 systemctl restart systemd-resolved
 
 clear;
